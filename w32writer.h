@@ -1047,6 +1047,11 @@ int GetMaterialSortPriority(aiMaterial* mat) {
 	auto name = (std::string)mat->GetName().C_Str();
 	FixNameExtensions(name);
 
+	if (!std::filesystem::exists("FlatOutW32BGMTool_gcp.toml")) {
+		WriteConsole("ERROR: Failed to load config file FlatOutW32BGMTool_gcp.toml", LOG_ERRORS);
+		return 0;
+	}
+
 	static auto config = toml::parse_file("FlatOutW32BGMTool_gcp.toml");
 	return config["material_priorities"][name].value_or(0);
 }
