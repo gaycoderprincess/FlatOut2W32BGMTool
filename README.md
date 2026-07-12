@@ -21,6 +21,11 @@ Thanks to Gulbroz for their existing work on this format, it was a great jumping
 ![Rally Trophy track in FOUC](https://i.imgur.com/yDpSjLz.png)
 ![FO1 custom track preview](https://i.imgur.com/IHufahy.jpeg)
 
+## Disclaimer
+
+Due to the current programming landscape, I feel that it's necessary to explicitly state that this project had zero assistance or any other kind of involvement from any sort of "AI agent" and it never will.  
+This mod was entirely built by hand, by a human being, and I believe that any project that cannot also claim this about itself is not worth people's time. The only acceptable amount of AI use is zero AI use.
+
 ## Usage
 
 - Enter a commandline prompt, run `FlatOutW32BGMTool_gcp.exe (filename)` with the arguments you'd like to use
