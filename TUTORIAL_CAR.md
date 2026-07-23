@@ -92,7 +92,7 @@ Switch back to the Layout tab, use File -> Append and select the base .blend fil
 https://drive.google.com/file/d/1_r1PuEzW1BB--D77h8UALXCF44t5qQgJ/view?usp=sharing
 
 Create a new dummy using Add -> Empty -> Plain Axes, then set its position and rotation to 0 on all axes if they're not already
-Select all of your car's parts and drag them into the newly created empty while holding Shift and Alt
+Select all of your car's parts and drag them into the newly created empty while holding Shift and Alt (or only Shift if you're using a newer version of Blender as they've recently stupidly changed Alt to mean "hold down to not keep transforms" rather than "hold down to keep transforms")
 
 <img width="337" height="311" alt="Screenshot_20251030_201241" src="https://github.com/user-attachments/assets/247ffb3b-f447-4421-a75a-70bf54546f37" />
 
