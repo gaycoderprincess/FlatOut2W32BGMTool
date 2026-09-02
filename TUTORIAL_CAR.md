@@ -208,12 +208,12 @@ for f in *.dds; do convert "$f" -separate -swap 0,3 -combine "$f"; done
 for f in *.dds; do convert "$f" -channel R -evaluate set 0% "$f"; done
 ```
 
-Empty normals, speculars, lights and a sample windows.dds
-The game will crash when the car loads in the menu if you don't have most of these, so this is needed if you don't have any normals, lights_glow or other such textures
+Empty normals, speculars, lights and a sample windows.dds  
+The game will crash when the car loads in the menu if you don't have most of these, so this is needed if you don't have any normals, lights_glow or other such textures  
 https://drive.google.com/file/d/1hQPyPWKuZhmpJFLX5c_RH_ebxh-xTHzj/view?usp=sharing
 
-EXTRA NOTE: The reflectivity of the light shader depends on the alpha value of lights_glow, lights_glowlit and lights_damaged_glow
-If the texture looks too dark, simply decrease the alpha value of those textures, 0 alpha makes the lights show up matte, near-identically to how the car diffuse shader looks
+EXTRA NOTE: The reflectivity of the light shader depends on the alpha value of lights_glow, lights_glowlit and lights_damaged_glow  
+If the texture looks too dark, simply decrease the alpha value of those textures, 0 alpha makes the lights show up matte, near-identically to how the car diffuse shader looks  
 Make sure to keep the alpha channel identical between lights_glow and lights_glowlit, otherwise shading on the rest of the lights may change when you brake or reverse!
 
 <img width="688" height="360" alt="image" src="https://github.com/user-attachments/assets/b53e2de1-826b-407a-b06a-155f8376187e" />
