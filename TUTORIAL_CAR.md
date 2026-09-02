@@ -199,7 +199,7 @@ CollisionTopMin         = CollisionFullMin
 CollisionTopMax         = CollisionFullMax
 ```
 
-Normal maps are stored in a different format in FOUC, here's a quick set of commands to convert regular ones to its format, using bash and imagemagick
+Normal maps are stored in a different format in FOUC, here's a quick set of commands to convert regular ones to its format, using bash and imagemagick  
 Run these commands with bash in a folder containing only the normal maps in .dds format.
 ```
 for f in *.dds; do convert "$f" -channel B -evaluate set 0% "$f"; done
